@@ -19,30 +19,19 @@ const About = () => {
       is to sculpt the future through cutting-edge solutions that
       transcend the boundaries of possibility.`,
       ColorCode: "",
-      AboutImage:
+      AboutImage: "",
     },
   ];
 
   return (
     <>
-      <Flex flexDirection={{ base: "column", md: "flex" }}>
-        {CompanyAbout.map((MappedData, index) => (
-          <Flex key={index} flex={{ base: "1", md: "1" }}>
-            <Card p={4}>
-              <CardHeader>
-                <motion.div whileHover={{ scaleY: 1.1, originY: 0 }}>
-                  <Text fontSize={"4xl"} textAlign={"center"}>
-                    {MappedData.TextHeader}
-                  </Text>
-                </motion.div>
-              </CardHeader>
-              <CardBody>
-                <Text>{MappedData.TextContent}</Text>
-              </CardBody>
-            </Card>
-          </Flex>
-        ))}
-      </Flex>
+      <Card
+        bgImg={
+          "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRlY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60')"
+        }
+      >
+        sdofisjgoidjsfgiojgdsfg
+      </Card>
     </>
   );
 };
