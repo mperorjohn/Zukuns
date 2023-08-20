@@ -19,6 +19,7 @@ const About = () => {
       is to sculpt the future through cutting-edge solutions that
       transcend the boundaries of possibility.`,
       ColorCode: "",
+      AboutImage:
     },
   ];
 
