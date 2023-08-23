@@ -30,22 +30,37 @@ const Services = () => {
   const TextAnimation = ["M", "E", "S", "O", "V", "E", "R", "S", "E"];
 
   return (
-    <Stack>
-      <Box bg={"black"} p={"5"}>
+    <Stack
+      bgImg={
+        "url('https://storage.googleapis.com/pai-images/7d7a460e0fcd4d2eab84632db6b15037.jpeg')"
+      }
+      bgRepeat={"repeat"}
+      bgSize={"cover"}
+      bgPosition={"center"}
+    >
+      <Box
+        bgImg={
+          "url('https://storage.googleapis.com/pai-images/7d7a460e0fcd4d2eab84632db6b15037.jpeg')"
+        }
+        bgRepeat={"repeat"}
+        bgSize={"cover"}
+        bgPosition={"center"}
+        p={"5"}
+      >
         <Heading as={"h1"} color={"white"} fontSize={"4xl"}>
           <motion.h1
             initial={{ x: "-100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.2,}}
+            transition={{ duration: 1.2 }}
           >
             {TextAnimation.map((Letters, index) => (
               <span key={index} value={Letters}>
-                {Letters} 
+                {Letters}
               </span>
             ))}
           </motion.h1>
         </Heading>
-        <Flex bg={"black"} p={"30"} borderRadius={"0px"} flexGrow={"12"}>
+        <Flex p={"30"} borderRadius={"0px"} flexGrow={"12"}>
           <motion.div
             initial={{ opacity: 20, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,7 +68,7 @@ const Services = () => {
           >
             <Heading
               textAlign={"center"}
-              color={"#024190"}
+              color={"white"}
               display={"flex"}
               alignContent={"center"}
               alignItems={"center"}

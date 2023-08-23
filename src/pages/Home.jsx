@@ -118,7 +118,7 @@ const Home = () => {
           <Container>
             <Heading textAlign={"center"}>Our Mission</Heading>
             <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
               odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
               quae dignissimos quaerat!
@@ -140,12 +140,13 @@ const Home = () => {
         </Flex>
         <Flex flex={{ base: "1", md: "1" }} m={4}>
           <Container>
-            <Heading textAlign={"center"}>Our Goal</Heading>
+            <Heading textAlign={"center"}>Our Vision</Heading>
             <Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
-              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!
+              Our vision is to create a harmonious synergy between humans and
+              technology, ushering in an era where seamless integration empowers
+              lives. We believe that every challenge is an opportunity in
+              disguise, and our mission is to unearth solutions that enrich
+              experiences, simplify complexities, and drive progress.
             </Text>
             <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
               <Button

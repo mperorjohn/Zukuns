@@ -74,12 +74,7 @@ const Footer = () => {
         position={"relative"}
         bottom={0}
       >
-        <Card
-          bg={"black"}
-          // borderRight={"2px solid white"}
-          // p={4}
-          // borderRadius={0}
-        >
+        <Card bg={"black"}>
           <CardHeader></CardHeader>
           <CardBody>
             <Text fontSize={"4xl"} color={"white"}>
@@ -90,8 +85,9 @@ const Footer = () => {
         {/*  */}
         <Card bg={"black"} borderRadius={0}>
           <CardHeader>
-            <Text as={"h1"} fontSize={"2xl"} color={"white"}>
+            <Text as={"h1"} textAlign={'center'} fontSize={"2xl"} color={"white"}>
               Office Address:
+              <hr />
             </Text>
           </CardHeader>
           <CardBody mt={0}>
@@ -108,8 +104,9 @@ const Footer = () => {
         {/*  */}
         <Card bg={"black"} borderRadius={0}>
           <CardHeader>
-            <Text as={"h1"} fontSize={"2xl"} color={"white"}>
+            <Text as={"h1"} textAlign={'center'} fontSize={"2xl"} color={"white"}>
               Contact:
+              <hr />
             </Text>
           </CardHeader>
           <CardBody mt={0}>

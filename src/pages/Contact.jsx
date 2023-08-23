@@ -20,6 +20,7 @@ import {
 import { useState } from "react";
 import { BsMessenger } from "react-icons/bs";
 import { motion } from "framer-motion";
+import ImageComponent from "../Component/ImageComponent";
 
 const Contact = () => {
   const [email, setEmail] = useState();
@@ -32,23 +33,18 @@ const Contact = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 6 }}
-      transition={{ duration: 2 }}
-      
+      transition={{ duration: 1 }}
     >
       <Flex flexDirection={{ base: "column", md: "row" }} mb={6}>
         {/* First Section */}
-        <Flex
-          flex={{ base: "1", md: "1" }}
-          bgImg={"url(src/assets/MesoBG.png)"}
-          bgPosition={"center"}
-          bgSize={"cover"}
-        >
-          {/* Content for the first section */}
+        <Flex flex={{ base: "1", md: "1" }}>
+          <ImageComponent width={'100%'} src="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-3483599-2912016.png" />
+
         </Flex>
 
         {/* Second Section */}
 
-        <Flex flex={{ base: "1", md: "1" }} bg={"white"}>
+        <Flex flex={{ base: "", md: "1" }} bg={"white"}>
           <Container mt={"10"}>
             <motion.div
               initial={{ opacity: 0, y: 70 }}
