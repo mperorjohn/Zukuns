@@ -85,7 +85,12 @@ const Footer = () => {
         {/*  */}
         <Card bg={"black"} borderRadius={0}>
           <CardHeader>
-            <Text as={"h1"} textAlign={'center'} fontSize={"2xl"} color={"white"}>
+            <Text
+              as={"h1"}
+              textAlign={"center"}
+              fontSize={"2xl"}
+              color={"white"}
+            >
               Office Address:
               <hr />
             </Text>
@@ -104,7 +109,12 @@ const Footer = () => {
         {/*  */}
         <Card bg={"black"} borderRadius={0}>
           <CardHeader>
-            <Text as={"h1"} textAlign={'center'} fontSize={"2xl"} color={"white"}>
+            <Text
+              as={"h1"}
+              textAlign={"center"}
+              fontSize={"2xl"}
+              color={"white"}
+            >
               Contact:
               <hr />
             </Text>
@@ -125,7 +135,6 @@ const Footer = () => {
             ))}
           </CardBody>
         </Card>
-        {/*  */}
         <Card bg={"black"}>
           <CardHeader fontWeight={"bold"} fontSize={"2xl"} color={"#FDB154"}>
             Subscribe for News letter
@@ -166,7 +175,6 @@ const Footer = () => {
                   <RiMailSendLine />
                 </Box>
               </Button>
-              {/* <SubscribeButton disable={subMail === ""} /> */}
             </FormControl>
           </CardBody>
         </Card>
