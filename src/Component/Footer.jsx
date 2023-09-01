@@ -77,6 +77,8 @@ const Footer = () => {
         bg={'black'}
         position={'relative'}
         bottom={0}
+        justifyContent={{ base: 'center' }}
+        alignItems={{ base: 'center' }}
       >
         <Card bg={'black'}>
           <CardHeader></CardHeader>
@@ -86,7 +88,6 @@ const Footer = () => {
             </Text>
           </CardBody>
         </Card>
-        {/*  */}
         <Card bg={'black'} borderRadius={0}>
           <CardHeader>
             <Text
@@ -184,16 +185,22 @@ const Footer = () => {
       </SimpleGrid>
       <Card bg="black" borderRadius={'none'}>
         <CardBody>
-          <hr />
+          {/* <hr /> */}
 
-          <Flex flexDirection={'row'} justifyContent={{base:'center', md:'left'}}>
-            <Box marginTop="4" _hover={{ colorScheme:"dark", borderRadius: 4 }}>
+          <Flex
+            flexDirection={'row'}
+            justifyContent={{ base: 'center', md: 'left' }}
+          >
+            <Box
+              marginTop="4"
+              _hover={{ colorScheme: 'dark', borderRadius: 4 }}
+            >
               <BsLinkedin size={30} color="white" />
             </Box>
             <Box
               marginTop={4}
               ml={4}
-              _hover={{ colorScheme: "blue", borderRadius: 4 }}
+              _hover={{ colorScheme: 'blue', borderRadius: 4 }}
             >
               <FaGithubSquare color="white" size={32} />
             </Box>
