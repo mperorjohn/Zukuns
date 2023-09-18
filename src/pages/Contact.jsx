@@ -35,7 +35,7 @@ const Contact = () => {
       animate={{ opacity: 6 }}
       transition={{ duration: 1 }}
     >
-      <Flex flexDirection={{ base: 'column', md: 'row' }} mb={6}>
+      <Flex flexDirection={{ base: 'column', md: 'row' }} mb={6} fontFamily={"'Livvic', sans-serif"}>
         {/* First Section */}
         <Flex flex={{ base: '1', md: '1' }}>
           <ImageComponent
@@ -55,7 +55,7 @@ const Contact = () => {
             >
               <Card bg={'#024190'} p={4} borderRadius={'2xl'}>
                 <CardHeader>
-                  <Heading textAlign={'center'} color={'white'}>
+                  <Heading textAlign={'center'} color={'white'} fontFamily={"'Livvic', sans-serif"} >
                     Contact Us
                   </Heading>
                 </CardHeader>

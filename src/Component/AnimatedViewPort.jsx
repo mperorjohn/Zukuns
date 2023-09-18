@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
 
-const AnimatedViewPort = props => {
+function AnimatedContent() {
   return (
-    <div>AnimatedViewPort</div>
-  )
+    <motion.div
+      className="content-container"
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: 20 }}
+    ></motion.div>
+  );
 }
 
-
-export default AnimatedViewPort
+export default AnimatedContent;

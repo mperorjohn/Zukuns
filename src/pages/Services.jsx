@@ -27,7 +27,7 @@ import { useState } from "react";
 // import WebAppMessage from "../Component/WebAppMessage";
 
 const Services = () => {
-  const TextAnimation = ["M", "E", "S", "O", "V", "E", "R", "S", "E"];
+  // const TextAnimation = ["M", "E", "S", "O", "V", "E", "R", "S", "E"];
 
   return (
     <Stack
@@ -37,6 +37,7 @@ const Services = () => {
       bgRepeat={"repeat"}
       bgSize={"cover"}
       bgPosition={"center"}
+      fontFamily={"'Livvic', sans-serif"}
     >
       <Box
         bgImg={
@@ -47,19 +48,7 @@ const Services = () => {
         bgPosition={"center"}
         p={"5"}
       >
-        <Heading as={"h1"} color={"white"} fontSize={"4xl"}>
-          <motion.h1
-            initial={{ x: "-100vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.2 }}
-          >
-            {TextAnimation.map((Letters, index) => (
-              <span key={index} value={Letters}>
-                {Letters}
-              </span>
-            ))}
-          </motion.h1>
-        </Heading>
+       
         <Flex p={"30"} borderRadius={"0px"} flexGrow={"12"}>
           <motion.div
             initial={{ opacity: 20, y: -20 }}

@@ -16,6 +16,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaCertificate } from "react-icons/fa";
 // import ImageComponent from "../Component/ImageComponent";
+import AnimatedContent from "../Component/AnimatedViewPort";
 
 const Home = () => {
   return (
@@ -47,7 +48,7 @@ const Home = () => {
                 textAlign={"center"}
                 textTransform={"capitalize"}
                 fontWeight={"bold"}
-                fontFamily={"'Jost', sans-serif !important"}
+                fontFamily={"'Livvic', sans-serif"}
               >
                 Web build, we design. We are the{" "}
                 <Text
@@ -65,16 +66,12 @@ const Home = () => {
             </Container>
           </CardHeader>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
           <CardBody mt={"-10"}>
+            fontFamily={"'Livvic', sans-serif"}
             <Text color={"white"}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo
-              enim maxime quae eius obcaecati, dolores a alias pariatur
-              voluptas!
+              enim maxime quae eius obcaecati,s a alias pariatur voluptas!
             </Text>
           </CardBody>
         </motion.div>
@@ -115,33 +112,38 @@ const Home = () => {
         bg={"Background"}
       >
         <Flex height={"40vh"} flex={{ base: "1", md: "1" }} m={4}>
-          <Container>
-            <Heading textAlign={"center"}>Our Mission</Heading>
-            <Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
-              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!
-            </Text>
-            <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
-              <Button
-                mt={8}
-                bg={"#024190"}
-                color={"white"}
-                _hover={{ bg: "#FDB154", color: "#024190" }}
-              >
-                Read More
-                <Box ml={"2"} mt={"1"}>
-                  <HiArrowNarrowRight />
-                </Box>
-              </Button>
-            </motion.div>
-          </Container>
+          <div className="content-container">
+            <Container>
+              <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
+                Our Mission
+              </Heading>
+              <Text fontFamily={"'Livvic', sans-serif"}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, voluptate. Sit ipsa eligendi impedit similique
+                beatae odio dolores quo eum. Nihil culpa sint quam soluta
+                officiis labore quae dignissimos quaerat!
+              </Text>
+              <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
+                <Button
+                  mt={8}
+                  bg={"#024190"}
+                  color={"white"}
+                  _hover={{ bg: "#FDB154", color: "#024190" }}
+                  fontFamily={"'Livvic', sans-serif"}
+                >
+                  Read More
+                  <Box ml={"2"} mt={"1"}>
+                    <HiArrowNarrowRight />
+                  </Box>
+                </Button>
+              </motion.div>
+            </Container>
+          </div>
         </Flex>
         <Flex flex={{ base: "1", md: "1" }} m={4}>
           <Container>
-            <Heading textAlign={"center"}>Our Vision</Heading>
-            <Text>
+            <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>Our Vision</Heading>
+            <Text fontFamily={"'Livvic', sans-serif"}>
               Our vision is to create a harmonious synergy between humans and
               technology, ushering in an era where seamless integration empowers
               lives. We believe that every challenge is an opportunity in
@@ -154,6 +156,7 @@ const Home = () => {
                 bg={"#FDB154"}
                 color={"#024190"}
                 _hover={{ bg: "#024190", color: "white" }}
+                fontFamily={"'Livvic', sans-serif"}
               >
                 Read More
                 <Box ml={"2"} mt={"1"}>

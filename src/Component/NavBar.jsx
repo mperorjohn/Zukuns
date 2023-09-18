@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <>
       <Flex align={"center"} as={"div"} bg={"#FDB154"} p={"2"}>
-          <Text textAlign={"center"} color={"white"} fontStyle={"italic"}>
-            Looping through coming generation...
-          </Text>
+        <Text textAlign={"center"} color={"white"} fontStyle={"italic"}>
+          Looping through coming generation...
+        </Text>
       </Flex>
       <Flex
         as="nav"
@@ -32,6 +32,7 @@ const Navbar = () => {
         boxShadow={"dark-lg"}
         position={"relative"}
         top={0}
+        fontFamily={"'Livvic', sans-serif"}
       >
         {/* <Flex align="center" mr={5}>
           <Heading as="h1" fontSize="4xl" fontWeight="bold">

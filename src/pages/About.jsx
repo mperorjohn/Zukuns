@@ -57,6 +57,8 @@ const About = () => {
             textAlign={"center"}
             color={"white"}
             fontSize={{ base: "70px", sm: "24px", md: "32px", lg: "140px" }}
+            fontFamily={"'Livvic', sans-serif"}
+            
           >
             About
           </Heading>
@@ -84,6 +86,7 @@ const About = () => {
                   color: "white",
                   transition: "0.5s",
                 }}
+                fontFamily={"'Livvic', sans-serif"}
               >
                 <CardHeader
                   fontWeight={"bold"}
