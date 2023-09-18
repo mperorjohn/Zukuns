@@ -45,7 +45,6 @@ const Navbar = () => {
 
         <Spacer />
         <Spacer />
-        <Spacer />
         <Box display={{ base: "block", md: "none" }}>
           <IconButton
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}

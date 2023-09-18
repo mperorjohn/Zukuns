@@ -9,8 +9,8 @@ const ImageComponent = (props) => {
 ImageComponent.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
+  height: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
 };
 
 export default ImageComponent;

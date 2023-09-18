@@ -15,12 +15,13 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaCertificate } from "react-icons/fa";
+import ImageComponent from "../Component/ImageComponent";
 // import ImageComponent from "../Component/ImageComponent";
-import AnimatedContent from "../Component/AnimatedViewPort";
+// import AnimatedContent from "../Component/AnimatedViewPort";
 
 const Home = () => {
   return (
-    <>
+    <React.Fragment>
       <Card
         align={"center"}
         borderRadius={"0px"}
@@ -37,7 +38,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 5 }}
+          transition={{ duration: 2 }}
         >
           <CardHeader mt={"120"}>
             <Container>
@@ -95,6 +96,7 @@ const Home = () => {
                 transition: "1s",
               }}
               display={"flex"}
+              fontFamily={"'Livvic', sans-serif"}
             >
               Explore{" "}
               <Box ml={"2"} mt={"1"}>
@@ -105,57 +107,30 @@ const Home = () => {
         </motion.div>
       </Card>
       {/* Our Mission and goal */}
-      <Flex
-        p={10}
-        // height="50vh"
-        flexDirection={{ base: "column", md: "row" }}
-        bg={"Background"}
-      >
-        <Flex height={"40vh"} flex={{ base: "1", md: "1" }} m={4}>
-          <div className="content-container">
-            <Container>
-              <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
-                Our Mission
-              </Heading>
-              <Text fontFamily={"'Livvic', sans-serif"}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis, voluptate. Sit ipsa eligendi impedit similique
-                beatae odio dolores quo eum. Nihil culpa sint quam soluta
-                officiis labore quae dignissimos quaerat!
-              </Text>
-              <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
-                <Button
-                  mt={8}
-                  bg={"#024190"}
-                  color={"white"}
-                  _hover={{ bg: "#FDB154", color: "#024190" }}
-                  fontFamily={"'Livvic', sans-serif"}
-                >
-                  Read More
-                  <Box ml={"2"} mt={"1"}>
-                    <HiArrowNarrowRight />
-                  </Box>
-                </Button>
-              </motion.div>
-            </Container>
-          </div>
+      <Flex height={"40vh"} m={4} flexDirection={{ base: "column", md: "row" }}>
+        <Flex flex={{ base: "1", md: "1" }} justify={"center"}>
+          <ImageComponent
+            src="https://img.freepik.com/free-vector/goal-illustration-concept_114360-903.jpg?w=2000"
+            height="2000px" width="500px"
+          />
         </Flex>
         <Flex flex={{ base: "1", md: "1" }} m={4}>
           <Container>
-            <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>Our Vision</Heading>
+            <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
+              Our Vision
+            </Heading>
             <Text fontFamily={"'Livvic', sans-serif"}>
-              Our vision is to create a harmonious synergy between humans and
-              technology, ushering in an era where seamless integration empowers
-              lives. We believe that every challenge is an opportunity in
-              disguise, and our mission is to unearth solutions that enrich
-              experiences, simplify complexities, and drive progress.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
+              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
+              quae dignissimos quaerat!
             </Text>
             <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
               <Button
                 mt={8}
-                bg={"#FDB154"}
-                color={"#024190"}
-                _hover={{ bg: "#024190", color: "white" }}
+                bg={"#024190"}
+                color={"white"}
+                _hover={{ bg: "#FDB154", color: "#024190" }}
                 fontFamily={"'Livvic', sans-serif"}
               >
                 Read More
@@ -167,6 +142,44 @@ const Home = () => {
           </Container>
         </Flex>
       </Flex>
+      {/* our Mission section */}
+      <Flex>
+        <Flex flex={{ base: 1, md: 1 }}>
+          <Container>
+            <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
+              Our Mission
+            </Heading>
+            <Text fontFamily={"'Livvic', sans-serif"}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
+              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
+              quae dignissimos quaerat!
+            </Text>
+            <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
+              <Button
+                mt={8}
+                bg={"#024190"}
+                color={"white"}
+                _hover={{ bg: "#FDB154", color: "#024190" }}
+                fontFamily={"'Livvic', sans-serif"}
+              >
+                Read More
+                <Box ml={"2"} mt={"1"}>
+                  <HiArrowNarrowRight />
+                </Box>
+              </Button>
+            </motion.div>
+          </Container>
+        </Flex>
+        <Flex flex={1}>
+          <ImageComponent
+            src="https://img.freepik.com/free-vector/happy-man-watching-launch-rocket_74855-14061.jpg?w=2000"
+            height={"20px"}
+            width="70%"
+          />
+        </Flex>
+      </Flex>
+
       <Flex justifyContent="center" alignItems="center" bg={"#FDB154"} p={"4"}>
         {/* Added Flex container to center its children */}
         <Heading
@@ -252,7 +265,7 @@ const Home = () => {
           height="40"
         ></Card>
       </SimpleGrid>
-    </>
+    </React.Fragment>
   );
 };
 
