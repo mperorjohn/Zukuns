@@ -107,7 +107,7 @@ const Home = () => {
         </motion.div>
       </Card>
       {/* Our Mission and goal */}
-      <Flex height={"40vh"} m={4} flexDirection={{ base: "column", md: "row" }}>
+      <Flex height={"70vh"} m={4} flexDirection={{ base: "column", md: "row" }}>
         <Flex flex={{ base: "1", md: "1" }} justify={"center"}>
           <ImageComponent
             src="https://img.freepik.com/free-vector/goal-illustration-concept_114360-903.jpg?w=2000"
