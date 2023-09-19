@@ -80,6 +80,7 @@ const Footer = () => {
         justifyContent={{ base: 'center' }}
         alignItems={{ base: 'center' }}
         fontFamily={"'Livvic', sans-serif"}
+        mt={{base:'36', md:''}}
       >
         <Card bg={'black'}>
           <CardHeader></CardHeader>

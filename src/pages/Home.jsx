@@ -111,9 +111,9 @@ const Home = () => {
           flex={{ base: "1", md: "1" }}
           bg={"blue.300"}
           borderTopLeftRadius={"full"}
-          borderToRightRadius={'full'}
+          borderToRightRadius={"full"}
           justify={"center"}
-          mt={'10'}
+          mt={"10"}
         >
           <Box p={10}>
             <ImageComponent
@@ -206,98 +206,6 @@ const Home = () => {
           />
         </Flex>
       </Flex>
-
-      <Flex
-        justifyContent="center"
-        alignItems="center"
-        bg={"#FDB154"}
-        mt={{ base: "36", md: "28" }}
-        p={"4"}
-      >
-        {/* Added Flex container to center its children */}
-        <Heading
-          textAlign={"center"}
-          fontWeight={"normal"}
-          letterSpacing={"tight"}
-          color={"white"}
-        >
-          <motion.div
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ delay: 1, duration: 1, stiffness: 140 }}
-          >
-            <Flex alignItems={"center"} alignContent={"center"}>
-              <Box mr={"2"}>
-                <FaCertificate />
-              </Box>
-              Trusted By
-            </Flex>
-          </motion.div>
-        </Heading>
-      </Flex>
-      <SimpleGrid
-        justifyContent={"center"}
-        alignItems={"center"}
-        // display={'flex'}
-        bg={"whiteAlpha.300"}
-        spacing={"4"}
-        templateColumns={"repeat(auto-fill, minmax(180px, 4fr))"}
-        p={"4"}
-      >
-        <Card
-          bg={"url('src/assets/Image 5.png')"}
-          borderRadius={"3xl"}
-          bgSize={"cover"}
-          bgPosition={"Center"}
-          p={"10"}
-          height="40"
-        ></Card>
-        {/* Second Brand  */}
-        <Card
-          bg={"url('src/assets/Image 6.png')"}
-          borderRadius={"3xl"}
-          bgSize={"cover"}
-          bgPosition={"Center"}
-          p={"10"}
-          height="40"
-        ></Card>
-        {/* Third brand */}
-        <Card
-          bg={"url('src/assets/Image 7.png')"}
-          borderRadius={"3xl"}
-          bgSize={"cover"}
-          bgPosition={"Center"}
-          p={"10"}
-          height="40"
-        ></Card>
-        {/* Fourth card */}
-        <Card
-          bg={"url('src/assets/Image 8.png')"}
-          borderRadius={"3xl"}
-          bgSize={"cover"}
-          bgPosition={"Center"}
-          p={"10"}
-          height="40"
-        ></Card>
-        {/* Fifth card */}
-        <Card
-          bg={"url('src/assets/Image 12.png')"}
-          borderRadius={"3xl"}
-          bgSize={"cover"}
-          bgPosition={"Center"}
-          p={"10"}
-          height="40"
-        ></Card>
-        {/* Sixth card */}
-        <Card
-          bg={"url('src/assets/Image 16.png')"}
-          borderRadius={"3xl"}
-          bgSize={"cover"}
-          bgPosition={"Center"}
-          p={"10"}
-          height="40"
-        ></Card>
-      </SimpleGrid>
     </React.Fragment>
   );
 };

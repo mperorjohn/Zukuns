@@ -40,7 +40,7 @@ const Contact = () => {
         <Flex flex={{ base: '1', md: '1' }}>
           <ImageComponent
             width={'100%'}
-            src="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-3483599-2912016.png"
+            src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg"
           />
         </Flex>
 
