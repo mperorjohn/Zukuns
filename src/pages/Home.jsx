@@ -158,13 +158,13 @@ const Home = () => {
       {/* our Mission section */}
       <Flex
         height={{ base: "100vh", md: "70vh" }}
-        mt={""}
+        // mt={{base:'',md:'14'}}
         flexDirection={{ base: "column", md: "row" }}
       >
         <Flex
           flex={{ base: 1, md: 1 }}
           justify={"center"}
-          mt={{ base: "52", md: "" }}
+          mt={{ base: "60", md: "44" }}
         >
           <Container mt={""} justify={"center"}>
             <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
@@ -211,7 +211,7 @@ const Home = () => {
         justifyContent="center"
         alignItems="center"
         bg={"#FDB154"}
-        mt={{ base: "28", md: "28" }}
+        mt={{ base: "36", md: "28" }}
         p={"4"}
       >
         {/* Added Flex container to center its children */}
