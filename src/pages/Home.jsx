@@ -17,7 +17,6 @@ import { motion } from "framer-motion";
 import { FaCertificate } from "react-icons/fa";
 import ImageComponent from "../Component/ImageComponent";
 // import ImageComponent from "../Component/ImageComponent";
-// import AnimatedContent from "../Component/AnimatedViewPort";
 
 const Home = () => {
   return (
@@ -108,12 +107,21 @@ const Home = () => {
       </Card>
       {/* Our Mission and goal */}
       <Flex height={"70vh"} flexDirection={{ base: "column", md: "row" }}>
-        <Flex flex={{ base: "1", md: "1" }} justify={"center"}>
-          <ImageComponent
-            src="https://img.freepik.com/free-vector/goal-illustration-concept_114360-903.jpg?w=2000"
-            height="400px"
-            width="500px"
-          />
+        <Flex
+          flex={{ base: "1", md: "1" }}
+          bg={"blue.300"}
+          borderTopLeftRadius={"full"}
+          borderToRightRadius={'full'}
+          justify={"center"}
+          mt={'10'}
+        >
+          <Box p={10}>
+            <ImageComponent
+              src="https://img.freepik.com/free-vector/goal-illustration-concept_114360-903.jpg?w=2000"
+              height="400px"
+              width="500px"
+            />
+          </Box>
         </Flex>
         <Flex flex={{ base: "1", md: "1" }} m={4}>
           <Container justifyContent={"center"}>
@@ -124,11 +132,11 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
               odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit similique beatae
-              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!
+              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit
+              similique beatae odio dolores quo eum. Nihil culpa sint quam
+              soluta officiis labore quae dignissimos quaerat!
             </Text>
-            <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
+            <Flex justify={{ base: "center", md: "start" }}>
               <Button
                 mt={8}
                 bg={"#024190"}
@@ -137,22 +145,28 @@ const Home = () => {
                 fontFamily={"'Livvic', sans-serif"}
               >
                 Read More
-                <Box ml={"2"} mt={"1"}>
-                  <HiArrowNarrowRight />
-                </Box>
+                <motion.div whileHover={{ scale: 1.2, originX: 0 }}>
+                  <Box ml={"2"} mt={"1"}>
+                    <HiArrowNarrowRight />
+                  </Box>
+                </motion.div>
               </Button>
-            </motion.div>
+            </Flex>
           </Container>
         </Flex>
       </Flex>
       {/* our Mission section */}
       <Flex
-        height={{base:'100vh', md:'70vh'}}
+        height={{ base: "100vh", md: "70vh" }}
         mt={""}
         flexDirection={{ base: "column", md: "row" }}
       >
-        <Flex flex={{ base: 1, md: 1 }} justify={"center"}>
-          <Container mt={''}>
+        <Flex
+          flex={{ base: 1, md: 1 }}
+          justify={"center"}
+          mt={{ base: "52", md: "" }}
+        >
+          <Container mt={""} justify={"center"}>
             <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
               Our Mission
             </Heading>
@@ -160,13 +174,13 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
               odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit similique beatae
-              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit similique beatae
-              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!
+              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit
+              similique beatae odio dolores quo eum. Nihil culpa sint quam
+              soluta officiis labore quae dignissimos quaerat!voluptate. Sit
+              ipsa eligendi impedit similique beatae odio dolores quo eum. Nihil
+              culpa sint quam soluta officiis labore quae dignissimos quaerat!
             </Text>
-            <motion.div whileHover={{ scale: 1.1, originX: 0 }}>
+            <Flex justify={{ base: "center", md: "start" }}>
               <Button
                 mt={8}
                 bg={"#024190"}
@@ -175,11 +189,13 @@ const Home = () => {
                 fontFamily={"'Livvic', sans-serif"}
               >
                 Read More
-                <Box ml={"2"} mt={"1"}>
-                  <HiArrowNarrowRight />
-                </Box>
+                <motion.div whileHover={{ scale: 1.2, originX: 0 }}>
+                  <Box ml={"2"} mt={"1"}>
+                    <HiArrowNarrowRight />
+                  </Box>
+                </motion.div>
               </Button>
-            </motion.div>
+            </Flex>
           </Container>
         </Flex>
         <Flex flex={{ base: "1", md: "1" }} justify={"center"}>
@@ -191,7 +207,13 @@ const Home = () => {
         </Flex>
       </Flex>
 
-      <Flex justifyContent="center" alignItems="center" bg={"#FDB154"} mt={"20"} p={"4"}>
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        bg={"#FDB154"}
+        mt={{ base: "28", md: "28" }}
+        p={"4"}
+      >
         {/* Added Flex container to center its children */}
         <Heading
           textAlign={"center"}
