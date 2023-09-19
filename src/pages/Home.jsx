@@ -107,21 +107,24 @@ const Home = () => {
         </motion.div>
       </Card>
       {/* Our Mission and goal */}
-      <Flex height={"70vh"} m={4} flexDirection={{ base: "column", md: "row" }}>
+      <Flex height={"70vh"} flexDirection={{ base: "column", md: "row" }}>
         <Flex flex={{ base: "1", md: "1" }} justify={"center"}>
           <ImageComponent
             src="https://img.freepik.com/free-vector/goal-illustration-concept_114360-903.jpg?w=2000"
-            height="2000px" width="500px"
+            height="400px"
+            width="500px"
           />
         </Flex>
         <Flex flex={{ base: "1", md: "1" }} m={4}>
-          <Container>
+          <Container justifyContent={"center"}>
             <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
               Our Vision
             </Heading>
             <Text fontFamily={"'Livvic', sans-serif"}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
+              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
+              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit similique beatae
               odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
               quae dignissimos quaerat!
             </Text>
@@ -143,15 +146,23 @@ const Home = () => {
         </Flex>
       </Flex>
       {/* our Mission section */}
-      <Flex>
-        <Flex flex={{ base: 1, md: 1 }}>
-          <Container>
+      <Flex
+        height={{base:'100vh', md:'70vh'}}
+        mt={""}
+        flexDirection={{ base: "column", md: "row" }}
+      >
+        <Flex flex={{ base: 1, md: 1 }} justify={"center"}>
+          <Container mt={''}>
             <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
               Our Mission
             </Heading>
             <Text fontFamily={"'Livvic', sans-serif"}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
+              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
+              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit similique beatae
+              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
+              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit similique beatae
               odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
               quae dignissimos quaerat!
             </Text>
@@ -171,16 +182,16 @@ const Home = () => {
             </motion.div>
           </Container>
         </Flex>
-        <Flex flex={1}>
+        <Flex flex={{ base: "1", md: "1" }} justify={"center"}>
           <ImageComponent
             src="https://img.freepik.com/free-vector/happy-man-watching-launch-rocket_74855-14061.jpg?w=2000"
-            height={"20px"}
+            height={"70px"}
             width="70%"
           />
         </Flex>
       </Flex>
 
-      <Flex justifyContent="center" alignItems="center" bg={"#FDB154"} p={"4"}>
+      <Flex justifyContent="center" alignItems="center" bg={"#FDB154"} mt={"20"} p={"4"}>
         {/* Added Flex container to center its children */}
         <Heading
           textAlign={"center"}
