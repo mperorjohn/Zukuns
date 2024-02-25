@@ -20,7 +20,7 @@ import {
 import { useState } from 'react';
 import { BsMessenger } from 'react-icons/bs';
 import { motion } from 'framer-motion';
-import ImageComponent from '../Component/ImageComponent';
+import ImageComponent from '../components/ImageComponent';
 
 const Contact = () => {
   const [email, setEmail] = useState();

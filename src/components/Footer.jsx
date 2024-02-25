@@ -86,7 +86,7 @@ const Footer = () => {
           <CardHeader></CardHeader>
           <CardBody>
             <Text fontSize={'4xl'} color={'white'}>
-              MesoVerse
+            Mesoverse
             </Text>
           </CardBody>
         </Card>

@@ -15,7 +15,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaCertificate } from "react-icons/fa";
-import ImageComponent from "../Component/ImageComponent";
+import ImageComponent from "../components/ImageComponent";
 // import ImageComponent from "../Component/ImageComponent";
 
 const Home = () => {
@@ -124,35 +124,36 @@ const Home = () => {
           </Box>
         </Flex>
         <Flex flex={{ base: "1", md: "1" }} m={4}>
-          <Container justifyContent={"center"}>
-            <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
-              Our Vision
-            </Heading>
-            <Text fontFamily={"'Livvic', sans-serif"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, voluptate. Sit ipsa eligendi impedit similique beatae
-              odio dolores quo eum. Nihil culpa sint quam soluta officiis labore
-              quae dignissimos quaerat!voluptate. Sit ipsa eligendi impedit
-              similique beatae odio dolores quo eum. Nihil culpa sint quam
-              soluta officiis labore quae dignissimos quaerat!
-            </Text>
-            <Flex justify={{ base: "center", md: "start" }}>
-              <Button
-                mt={8}
-                bg={"#024190"}
-                color={"white"}
-                _hover={{ bg: "#FDB154", color: "#024190" }}
-                fontFamily={"'Livvic', sans-serif"}
-              >
-                Read More
-                <motion.div whileHover={{ scale: 1.2, originX: 0 }}>
-                  <Box ml={"2"} mt={"1"}>
-                    <HiArrowNarrowRight />
-                  </Box>
-                </motion.div>
-              </Button>
-            </Flex>
-          </Container>
+          
+            <Container justifyContent={"center"}>
+              <Heading textAlign={"center"} fontFamily={"'Livvic', sans-serif"}>
+                Our Vision
+              </Heading>
+              <Text fontFamily={"'Livvic', sans-serif"}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, voluptate. Sit ipsa eligendi impedit similique
+                beatae odio dolores quo eum. Nihil culpa sint quam soluta
+                officiis labore quae dignissimos quaerat!voluptate. Sit ipsa
+                eligendi impedit similique beatae odio dolores quo eum. Nihil
+                culpa sint quam soluta officiis labore quae dignissimos quaerat!
+              </Text>
+              <Flex justify={{ base: "center", md: "start" }}>
+                <Button
+                  mt={8}
+                  bg={"#024190"}
+                  color={"white"}
+                  _hover={{ bg: "#FDB154", color: "#024190" }}
+                  fontFamily={"'Livvic', sans-serif"}
+                >
+                  Read More
+                  <motion.div whileHover={{ scale: 1.2, originX: 0 }}>
+                    <Box ml={"2"} mt={"1"}>
+                      <HiArrowNarrowRight />
+                    </Box>
+                  </motion.div>
+                </Button>
+              </Flex>
+            </Container>
         </Flex>
       </Flex>
       {/* our Mission section */}

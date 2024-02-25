@@ -44,16 +44,7 @@ const Navbar = () => {
         </Link>
 
         <Spacer />
-        <Spacer />
-        <Box display={{ base: "block", md: "none" }}>
-          <IconButton
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            onClick={isOpen ? onClose : onOpen}
-            variant="ghost"
-            color={"white"}
-            boxShadow={"xl"}
-          />
-        </Box>
+        
 
         <Box
           display={{ base: isOpen ? "block" : "none", md: "flex" }}

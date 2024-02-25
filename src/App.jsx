@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import NavBar from "./Component/NavBar";
+import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import Docs from "./pages/Docs";
 import API from "./pages/API";
 import Services from "./pages/Services";
 import "./App.css";
-import Footer from "./Component/Footer";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
