@@ -7,6 +7,7 @@ import {
   Text,
   Spacer,
   IconButton,
+  Heading,
   useDisclosure,
   // Heading,
 } from "@chakra-ui/react";
@@ -34,17 +35,16 @@ const Navbar = () => {
         top={0}
         fontFamily={"'Livvic', sans-serif"}
       >
-        {/* <Flex align="center" mr={5}>
-          <Heading as="h1" fontSize="4xl" fontWeight="bold">
-            MesoVerse
-          </Heading>
-        </Flex> */}
         <Link to={"/"}>
-          <ImageComponent src={"src/assets/Logo.png"} height={50} width={50} />
+          <ImageComponent src={"src/assets/Zukuns.JPG"} height={50} width={50} />
         </Link>
+        <Flex align="center" mr={5}>
+          <Heading as="h1" fontSize="4xl" fontWeight="bold">
+            Zukuns
+          </Heading>
+        </Flex>
 
         <Spacer />
-        
 
         <Box
           display={{ base: isOpen ? "block" : "none", md: "flex" }}

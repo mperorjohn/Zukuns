@@ -43,23 +43,9 @@ const Footer = () => {
     {
       Location: 'Nigeria',
       tel: '+234900898434',
-      email: 'SupportNG@mesoverse.com',
-    },
-    {
-      Location: 'Canada',
-      tel: '+18983892929',
-      email: 'SupportCA@mesoverse.com',
-    },
-    {
-      Location: 'United Kingdom',
-      tel: '+44787827873',
-      email: 'SupportUK@mesoverse.com',
-    },
-    {
-      Location: 'India',
-      tel: '+968267678873',
-      email: 'SupportIND@mesoverse.com',
-    },
+      email: 'Support@zukuns.com',
+    }
+   
   ];
   const [subMail, setSubMail] = React.useState('');
 
@@ -86,7 +72,7 @@ const Footer = () => {
           <CardHeader></CardHeader>
           <CardBody>
             <Text fontSize={'4xl'} color={'white'}>
-            Mesoverse
+            Zukuns
             </Text>
           </CardBody>
         </Card>
